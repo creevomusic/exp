@@ -1,0 +1,230 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<meta charset='utf-8'>
+	<meta http-equiv="X-UA-Compatible" content="chrome=1">
+	<link rel="stylesheet" type="text/css" media="screen" href="stylesheets/stylesheet.css">
+
+	<title>自動作曲の進化実験</title>
+
+	<style>
+		ul.pub {line-height: 20px;}
+		ul.pub li {margin-bottom: 10px;}
+		ol.multi-column {float: left; width: 100%; line-height: 10px;}
+		ol.multi-column li {float: left; width: 50%; margin-bottom: 10px;}
+
+		.container {
+			display: flex;
+			justify-content: center;
+		}
+
+		label {
+			background-color: #1e83ff;
+			padding: 10px 40px;
+			border-radius: 5px;
+			color: white;
+			cursor : pointer;
+		}
+		label:hover {
+			background-color: #0f67d2;
+		}
+
+		h1 {
+			font-weight: 900;
+			text-shadow:3px 3px 0 #cccccc;
+		}
+
+		h2 {
+			font-weight: 900;
+			text-shadow:3px 3px 0 #cccccc;
+		}
+
+	</style>
+
+</head>
+
+<body>
+
+	<!-- HEADER -->
+<!-- 	<div id="header_wrap" class="outer" style="text-align:center;">
+		<header class="inner">
+			<h3><font color="#ffffff">聴き比べによるAI作曲家の進化実験　第1シーズン 第1世代</font></h3>
+		</header>
+	</div> -->
+
+	<!-- MAIN CONTENT -->
+
+	<div id="main_content_wrap" class="outer" style="background-image:url('./background_characters.jpg'); background-size:contain; border-top: none;">
+	<section id="main_content" class="inner">
+
+		<div style="margin-left:auto; margin-right:auto; width:95%; text-align:center; justify-content:center; padding: 20px 20px 20px 20px; ">
+
+			<h1>聴き比べによるAI作曲家の進化実験</h1>
+
+			<div style="height:20px;"></div>
+
+			<div style="margin-left:auto; margin-right:auto; width:700px; background-color: #ffffff88; padding: 20px 20px 20px 20px; ">
+				<h4 style="margin-left:auto; margin-right:auto; width:600px; text-align:left;">
+				<p>このプロジェクトでは、様々な自動作曲システム（AI作曲家）たちが作った曲を人が評価することで、新しいスタイルの音楽が生まれて変化していく過程を調べています。</p>
+	
+				<p>登場するAI作曲家や作られる曲は少しずつアップデートされます。彼らの音楽がどのように変わっていくかは、実験参加協力者の皆さまの聴き比べ結果によって決まります。</p>
+	
+				<p>ぜひ皆さまの感性でAI作曲家たちの音楽を評価してあげてください。そして彼らの音楽がどう変化するかを楽しんでもらえれば幸いです。評価が高いAI作曲家は、自動作曲システム CREEVO <a href="https://creevo-music.com" target="_blank"><img src="https://eita-nakamura.github.io/images/externallink.png" height="20pt" alt="" style="margin-bottom:5pt;"></a>にて、誰でも一般利用可能になる予定です。</p>
+	
+				<p>この科学実験は、皆さまからのご協力にかかっています。ぜひともご協力のほど、よろしくお願いいたします。</p>
+	
+				</h4>
+				<h5 style="margin-left:auto; margin-right:auto; width:600px; text-align:right;">
+				<p>CREEVO 実験プロジェクト代表　中村栄太（京都大学 白眉センター）</p>
+				</h5>
+			</div>
+			
+			<div style="height:20px;"></div>
+			
+			<label id="labelToExperiment" style="font-size:20pt"><strong>AI作曲家の聴き比べを始める</strong></label>
+			<div style="height:20px;"></div>
+			<div style="height:20px; font-size:16pt; text-shadow:2px 2px 0 #cccccc;"><strong>現在のAI作曲家集団：第1シーズン 第1世代</strong></div>
+
+			<div style="height:100px;"></div>
+
+			<h2>本実験プロジェクトの目的</h2>
+
+			<div style="height:20px;"></div>
+
+			<div style="margin-left:auto; margin-right:auto; width:700px; background-color: #ffffff88; padding: 20px 20px 20px 20px; ">
+				<h4 style="margin-left:auto; margin-right:auto; width:600px; text-align:left;">
+				<p>今日私たちの生活を豊かにしてくれる音楽は、作曲家や演奏家の絶え間ない努力により発展してきました。その発展を支えているのは、音楽を聴いて楽しむ大勢の人です。</p>
+
+				<div style="height:10px;"></div>
+
+				<p><strong>音楽はどの様に進化して、どこに向かっているのでしょうか?<br>
+				文化の発展を支える人間の知能の本質は何でしょうか?</strong></p>
+
+				<div style="height:10px;"></div>
+
+				<p>本実験では、これらの問いに答えるための音楽の進化実験を行います。自動作曲技術を用いることで、新たな作曲家が生まれ続ける過程を模擬的に再現して、どのように新しい音楽スタイルが形成され変化するかを調べます。特に、音楽を聴く人々の好みが音楽の発展に与える影響を分析します。</p>
+			</div>
+
+			<div style="height:70px;"></div>
+
+			<h2>参加の方法</h2>
+
+			<div style="height:20px;"></div>
+
+			<div style="margin-left:auto; margin-right:auto; width:700px; background-color: #ffffff88; padding: 20px 20px 20px 20px; ">
+				<h4 style="margin-left:auto; margin-right:auto; width:600px; text-align:left;">
+				<p>どなたでも、スマホやパソコンなどからネット経由で参加できます。上のリンクからお進みください。</p>
+
+				<p>図のようにメロディーの聴き比べをしていただきます。結果を送信すると、曲を作ったAI作曲家が表示されます。曲と作曲家は毎回ランダムに選ばれます。自由な時間に好きなだけ参加していただけます。</p>
+
+				<p><div style="width:100%; padding: 20px 20px 20px 20px; text-align:center;"><img src="ListeningPage.png" height="300px" alt="" style="top:5px; box-shadow: 0 0 0px #ebebeb; margin: 0; border:0px solid rgb(200,200,200);"></div></p>
+
+				<p>はじめに簡単なアンケートに答えていただきますが、氏名などの個人情報は収集しませんので、安心して参加していただけます。</p>
+
+				<p>出てくる曲やAI作曲家は時間が経つと変化していきます。ぜひ定期的に訪れて、音楽がどう変化するかを確認してみてください。メーリングリストに登録された方には、実験プロジェクトの進行状況をご案内させていただきます。</p>
+
+				<p><div style="padding: 20px 20px 20px 20px; text-align:center; background-color:#B7EFFF"><a href="https://groups.google.com/u/3/g/creevo-participation" target="_blank">参加協力者向けメーリングリストの登録ページ</a><br>
+				<font style="font-size:10pt;">（Googleアカウントでログイン後、「グループに参加」からご登録ください。）</font>
+				</div>
+				</p>
+			</div>
+
+			<div style="height:50px;"></div>
+
+			<h2>音楽の進化実験の仕組み</h2>
+
+			<div style="height:20px;"></div>
+
+			<div style="margin-left:auto; margin-right:auto; width:700px; background-color: #ffffff88; padding: 20px 20px 20px 20px; ">
+				<h4 style="margin-left:auto; margin-right:auto; width:600px; text-align:left;">
+				<p>実験システム内には多数のAI作曲家（自動作曲エンジン）が存在します。自動作曲エンジンは多数のパラメーター（文化形質）を持ち、その値により異なるスタイルの音楽を生成することができます。システム内の世代交代では、師弟関係にあるAI作曲家の間で文化形質の値を受け継がれ、音楽のスタイルが伝達されます。この際、渡される文化形質の値には誤差も含まれ、弟子と師匠の音楽スタイルは少し異なります。</p>
+
+				<p>各AI作曲家が作った曲は人により評価され、評価が高かった作曲家は次の世代に残り、より多くの弟子を持ちます。この繰り返しにより、音楽の特徴や文化形質の分布が変化する様子を観測できます。</p>
+
+				<p><div style="padding: 20px 20px 20px 20px; text-align:center;">
+				<strong>AI作曲家の世代交代の例</strong><br>
+				<img src="fig_Generations.png" height="500px" alt="" style="top:15px; box-shadow: 0 0 0px #ebebeb; margin: 0; border:0px solid rgb(200,200,200);">
+				<div style="height:10px;"></div>
+				 右下の数値は評価値。<br>弟子の芸名の苗字は師匠から受け継ぎます。
+				</div></p>
+			</div>
+
+			<div style="height:50px;"></div>
+
+			<h2>実験プロジェクトの計画と展望</h2>
+
+			<div style="height:20px;"></div>
+
+			<div style="margin-left:auto; margin-right:auto; width:700px; background-color: #ffffff88; padding: 20px 20px 20px 20px; ">
+				<h4 style="margin-left:auto; margin-right:auto; width:600px; text-align:left;">
+				<p>本実験の目標は、現実の音楽データの分析だけでは難しい、音楽の時代変化の性質とそれを支える社会の影響の詳しい調査です。そのため、条件を変えて同様の実験を繰り返し行う予定です。</p>
+
+				<p>実験結果は、新しい音楽スタイルが生まれる過程など、文化の創造と発展の原理の科学的理解につながると期待されます。また、高品質かつ新しいスタイルの音楽を生成できる自動作曲など、いままでにない科学技術にも応用できます。</p>
+
+				<p>本実験で人気の高かったAI作曲家は、自動作曲システム CREEVO の中で使えるようになる予定です。</p>
+
+				<p>皆様からの継続的なご支援をどうぞよろしくお願い申し上げます。</p>
+
+				<p><div style="padding: 0px; text-align:center;">
+				<strong>自動作曲システム CREEVO</strong><br>
+				<a href="https://creevo-music.com" target="_blank"><img src="logo_mono_white.png" style="top:-5px;" height="70pt" alt="CREEVO"></a>
+				</div></p>
+			</div>
+
+			<div style="height:50px;"></div>
+
+			<h2>謝辞</h2>
+
+			<div style="height:20px;"></div>
+
+			<div style="margin-left:auto; margin-right:auto; width:700px; background-color: #ffffff88; padding: 20px 20px 20px 20px; ">
+				<h4 style="margin-left:auto; margin-right:auto; width:600px; text-align:left;">
+
+				<p>本プロジェクトは日本学術振興会 科学研究費 No. 19K20340、京都大学白眉プロジェクト、 2021 年度京都大学リサーチ・ディベロップメントプログラム【いしずえ】からの支援を受けています。</p>
+
+				<p>本実験で用いる音楽ファイルの生成には、歌声合成システム<a href="https://www.sinsy.jp/" target="_blank">Sinsy</a>を使わせていただいています。</p>
+
+				<p>AI作曲家の顔画像ファイルには、株式会社APTOが提供する顔画像アノテーションデータを使わせていただいています。</p>
+
+			</div>
+
+			<div style="height:50px;"></div>
+
+			<h2>実験プロジェクトメンバー</h2>
+
+			<div style="height:20px;"></div>
+
+			<div style="margin-left:auto; margin-right:auto; width:700px; background-color: #ffffff88; padding: 20px 20px 20px 20px; ">
+				<h4 style="margin-left:auto; margin-right:auto; width:600px; text-align:center;">
+
+				<p><a href="https://eita-nakamura.github.io/index-ja.html" target="_blank"><font style="color:#222222">中村栄太（京都大学 白眉センター）</font></a></p>
+
+			</div>
+
+			<div style="height:150px;"></div>
+
+		</div>
+
+	</section>
+	</div>
+
+	<!-- FOOTER  -->
+<!-- 	<div id="footer_wrap" class="outer">
+		<footer class="inner">
+		<p class="copyright">Maintained by Eita Nakamura</p>
+		</footer>
+	</div> -->
+
+	<script type="text/javascript">
+		document.getElementById('labelToExperiment').addEventListener('click', function(event){
+			location.href = 'https://eita-nakamura.github.io/TestTest/test.html';
+		});
+	</script>
+
+</body>
+
+</html>
+
+
+
