@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<meta charset='utf-8'>
+	<meta http-equiv="X-UA-Compatible" content="chrome=1">
+	<link rel="stylesheet" type="text/css" media="screen" href="stylesheets/stylesheet.css">
+
+	<title>ExpS1G1</title>
+
+	<style>
+		ul.pub {line-height: 20px;}
+		ul.pub li {margin-bottom: 10px;}
+		ol.multi-column {float: left; width: 100%; line-height: 10px;}
+		ol.multi-column li {float: left; width: 50%; margin-bottom: 10px;}
+
+		.container {
+			display: flex;
+			justify-content: center;
+		}
+
+		.BottonWithLabel {
+			display: none;
+		}
+
+		#labelToExperiment {
+			background-color: #b3d1f5;
+			padding: 10px 40px;
+			border-radius: 5px;
+			border: none;
+			outline: none;
+			font-size:15pt;
+			color: black;
+			cursor : pointer;
+		}
+		#labelToExperiment:hover {
+			background-color: #60a8ff;
+		}
+
+
+		.labelFamily {
+			background-color: #f5dbb3;
+			padding: 10px 20px;
+			border-radius: 5px;
+			border: none;
+			outline: none;
+			font-size:12pt;
+			color: black;
+			cursor : pointer;
+		}
+		.labelFamily:hover {
+			background-color: #b99051;
+		}
+
+
+	</style>
+
+</head>
+
+<body>
+
+	<!-- HEADER -->
+	<div id="header_wrap" class="outer" style="text-align:center;">
+		<header class="inner">
+			<a href="https://creevomusic.github.io/exp/"><h3><font color="#ffffff">AI作曲家のメロディー聴き比べ</font></h3></a>
+		</header>
+	</div>
+
+	<!-- MAIN CONTENT -->
+
+	<div id="main_content_wrap" class="outer">
+	<section id="main_content" class="inner">
+
+	<div style="margin-left:auto; margin-right:auto; width:95%; text-align:center; padding: 0px 20px 20px 20px;">
+
+		<h3 id="main_sentence">第1シーズン 第1世代に登場するAI作曲家</h3>
+		<h4>AI作曲家は苗字を師匠から受け継ぎます</h4>
+
+		<div style="height:20px;"></div>
+
+		<div>
+			<input class="BottonWithLabel" id="ButtonToNextGeneration" type="button" value=""/>
+			<label class="labelFamily" for="ButtonToNextGeneration">次の世代を見る</label>
+		</div>
+
+		<div style="height:10px;"></div>
+
+		<div class="container" id="ImageContainer" style="margin-left:auto; margin-right:auto; width:100%; text-align:center; padding: 0px 0px; display: flex; flex-direction: row; flex-wrap: wrap;">
+		</div>
+
+		<div style="height:20px;"></div>
+
+		<div>
+			<input class="BottonWithLabel" id="ButtonToNextGeneration" type="button" value=""/>
+			<label class="labelFamily" for="ButtonToNextGeneration">次の世代を見る</label>
+		</div>
+
+		<div style="height:40px;"></div>
+
+		<div style="text-align:left;">
+			AI作曲家の画像と名前は自動生成されたもので、実存する人とはいかなる関係もありません。<br>
+			顔画像には、株式会社APTOが提供する実存しない人の顔画像データを使わせていただいています。
+		</div>
+
+		<div style="height:30px;"></div>
+
+		<input class="BottonWithLabel" id="ButtonToExperiment" type="button" name="ButtonToExperiment" value=""/>
+		<label id="labelToExperiment" for="ButtonToExperiment">実験プロジェクトページに戻る</label>
+
+	</div>
+
+	<div style="height:20px;"></div>
+
+	<div id="memo" hidden></div>
+
+	</section>
+	</div>
+
+
+	<!-- FOOTER  -->
+	<div id="footer_wrap" class="outer">
+		<footer class="inner" style="text-align:center;">
+		<a href="https://forms.gle/XWhMB8vZL3bcmB1v6" target="_blank">不具合を報告する</a>
+		</footer>
+	</div>
+
+<!-- 	<script src="jquery.js"></script> -->
+	<script type="text/javascript">
+
+		var candModel=[0,1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20,21,22,23,24,25,26,27,28,29,30,31,32,33,34,35,36,37,38,39,40,41,42,43,44,45,46,47,48,49];
+		var listName=['南ゆうじ','比嘉たかし','岩渕たけお','深田たかゆき','勝又としき','橋口けいこ','楠本まき','相川としお','滝沢たかお','大竹たかふみ','小畑けんじ','大内ゆうや','瀬川はじめ','益田みき','板橋きょうこ','藤原はるふみ','小久保あつし','楠だいすけ','矢島かおり','沖ゆうじろう','川端たいすけ','田辺しゅうへい','沢井かんな','滝川いずみ','佐川ゆう','竹下ひろよ','白鳥ひさよ','齊藤あんな','田尻なつみ','志田みつあき','川上かずまさ','紺野みつえ','楠ひろき','福岡なおみ','風間ふとし','坪井さちえ','豊島ゆうき','土橋やすひさ','山上よしまさ','朝倉ゆたか','大友ひろお','福田りゅうすけ','柴山ひでお','谷口まさなり','朝倉さとし','菊池ひろし','本田ひろし','相原じゅんいち','奧田たかゆき','根岸あつし'];
+
+		var str='';
+		for(let i=0;i<candModel.length;i++){
+			str+='<div style="margin: 20px 0 0 0;">';
+			str+='<img src="https://creevo-music.com/experiment/S1G1_y28eQG/ExpS1_'+String(candModel[i])+'.png" height="120" alt="Picture" style="background-color:#eeeeee; margin: 5px 10px;"/>';
+			str+='<div>'+listName[i]+'</div>';
+			str+='</div>';
+		}//endfor i
+		document.getElementById('ImageContainer').innerHTML=str;
+
+		document.getElementById('labelToExperiment').addEventListener('click', function(event){
+			location.href = 'https://creevomusic.github.io/exp/';
+		});
+
+//		document.getElementById('ButtonToPrevGeneration').addEventListener('click', function(event){
+//			location.href = 'CreatorsExpS1G1.html';
+//		});
+
+		document.getElementById('ButtonToNextGeneration').addEventListener('click', function(event){
+			location.href = 'CreatorsExpS1G2.html';
+		});
+
+	</script>
+
+
+</body>
+
+</html>
+
+
+
