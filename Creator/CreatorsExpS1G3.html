@@ -73,7 +73,7 @@
 
 	<div style="margin-left:auto; margin-right:auto; width:95%; text-align:center; padding: 0px 20px 20px 20px;">
 
-		<h3 id="main_sentence">第1シーズン 第2世代に登場するAI作曲家</h3>
+		<h3 id="main_sentence">第1シーズン 第3世代に登場するAI作曲家</h3>
 		<h4>AI作曲家は苗字を師匠から受け継ぎます</h4>
 
 		<div style="height:20px;"></div>
@@ -81,8 +81,8 @@
 		<div>
 			<input class="BottonWithLabel" id="ButtonToPrevGeneration" type="button" value=""/>
 			<label class="labelFamily" for="ButtonToPrevGeneration">前の世代を見る</label>
-			<input class="BottonWithLabel" id="ButtonToNextGeneration" type="button" value=""/>
-			<label class="labelFamily" for="ButtonToNextGeneration">次の世代を見る</label>
+<!-- 			<input class="BottonWithLabel" id="ButtonToNextGeneration" type="button" value=""/>
+			<label class="labelFamily" for="ButtonToNextGeneration">次の世代を見る</label> -->
 		</div>
 
 		<div style="height:10px;"></div>
@@ -95,8 +95,8 @@
 		<div>
 			<input class="BottonWithLabel" id="ButtonToPrevGeneration" type="button" value=""/>
 			<label class="labelFamily" for="ButtonToPrevGeneration">前の世代を見る</label>
-			<input class="BottonWithLabel" id="ButtonToNextGeneration" type="button" value=""/>
-			<label class="labelFamily" for="ButtonToNextGeneration">次の世代を見る</label>
+<!-- 			<input class="BottonWithLabel" id="ButtonToNextGeneration" type="button" value=""/>
+			<label class="labelFamily" for="ButtonToNextGeneration">次の世代を見る</label> -->
 		</div>
 
 		<div style="height:40px;"></div>
@@ -131,13 +131,13 @@
 <!-- 	<script src="jquery.js"></script> -->
 	<script type="text/javascript">
 
-		var candModel=[50,51,52,53,54,55,56,57,58,59,60,61,62,63,64,65,66,67,68,69,70,71,72,73,74,75,76,77,78,79,80,81,82,83,84,85,86,87,88,89,90,91,92,93,94,95,96,97,98,99];
-		var listName=['磯野みき','岩下かずひこ','石山つばさ','谷まい','柳瀬ともはる','立石なみ','秋元なおこ','三輪みさと','竹中ともみ','竹原かずのり','角田かずえ','難波さとし','島かおる','小松まこと','田端みき','藤村のぶあき','熊田せいいち','藤田たかひろ','三橋ひでのり','角田さちえ','塚原ともみ','広瀬ふみひこ','亀山ゆきお','多田じゅん','横尾みえ','須賀しんいちろう','小柳あやか','難波ひでふみ','嶋田こずえ','富岡ゆい','国分こうすけ','江崎まさかず','野中こういち','緒方つよし','倉橋あいこ','勝田ゆうき','古田みく','相沢けいじ','奧山まなみ','臼井よしひと','中山りさ','玉田ねね','吉村さおり','河田まさき','矢田こうじ','樋口りょう','白川しょうじ','柿沼のりお','長浜ひろき','小原ゆきこ'];
+		var candModel=[50,57,58,61,65,66,67,69,70,71,73,74,75,76,82,83,84,85,88,90,91,93,94,95,97,100,101,102,103,104,105,106,107,108,109,110,111,112,113,114,115,116,117,118,119,120,121,122,123,124];
+		var listName=['磯野みき','三輪みさと','竹中ともみ','難波さとし','藤村のぶあき','熊田せいいち','藤田たかひろ','角田さちえ','塚原ともみ','広瀬ふみひこ','多田じゅん','横尾みえ','須賀しんいちろう','小柳あやか','野中こういち','緒方つよし','倉橋あいこ','勝田ゆうき','奧山まなみ','中山りさ','玉田ねね','河田まさき','矢田こうじ','樋口りょう','柿沼のりお','倉橋すみれ','磯野こういち','磯野このみ','磯野ひでゆき','嶋田ゆいか','玉田たかし','秋元みゆき','三橋たまみ','藤村わかな','広瀬りょう','岩下じゅんいち','柿沼えいじ','藤田みほ','柳瀬こうすけ','多田ようすけ','倉橋ゆうき','長浜ようへい','島しんや','角田ただし','河田こうじ','白川しょうこ','島かなこ','秋元しょうこ','竹中たくみ','多田きょうこ'];
 
 		var str='';
 		for(let i=0;i<candModel.length;i++){
 			str+='<div style="margin: 20px 0 0 0;">';
-			str+='<img src="https://creevo-music.com/experiment/S1G2_2hsr8J/ExpS1_'+String(candModel[i])+'.png" height="120" alt="Picture" style="background-color:#eeeeee; margin: 5px 10px;"/>';
+			str+='<img src="https://creevo-music.com/experiment/S1G3_662Yos/ExpS1_'+String(candModel[i])+'.png" height="120" alt="Picture" style="background-color:#eeeeee; margin: 5px 10px;"/>';
 			str+='<div>'+listName[i]+'</div>';
 			str+='</div>';
 		}//endfor i
@@ -148,12 +148,12 @@
 		});
 
 		document.getElementById('ButtonToPrevGeneration').addEventListener('click', function(event){
-			location.href = 'https://creevomusic.github.io/exp/Creator/CreatorsExpS1G1.html';
+			location.href = 'https://creevomusic.github.io/exp/Creator/CreatorsExpS1G2.html';
 		});
 
-		document.getElementById('ButtonToNextGeneration').addEventListener('click', function(event){
-			location.href = 'https://creevomusic.github.io/exp/Creator/CreatorsExpS1G3.html';
-		});
+//		document.getElementById('ButtonToNextGeneration').addEventListener('click', function(event){
+//			location.href = 'https://creevomusic.github.io/exp/Creator/CreatorsExpS1G4.html';
+//		});
 
 	</script>
 
