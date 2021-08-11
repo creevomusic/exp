@@ -6,7 +6,7 @@
 	<meta http-equiv="X-UA-Compatible" content="chrome=1">
 	<link rel="stylesheet" type="text/css" media="screen" href="https://creevomusic.github.io/exp/stylesheets/stylesheet.css">
 
-	<title>ExpS1G4</title>
+	<title>ExpS1G5</title>
 
 	<style>
 		ul.pub {line-height: 20px;}
@@ -73,7 +73,7 @@
 
 	<div style="margin-left:auto; margin-right:auto; width:95%; text-align:center; padding: 0px 20px 20px 20px;">
 
-		<h3 id="main_sentence">第1シーズン 第4世代に登場するAI作曲家</h3>
+		<h3 id="main_sentence">第1シーズン 第5世代に登場するAI作曲家</h3>
 		<h4>AI作曲家は苗字を師匠から受け継ぎます</h4>
 
 		<div style="height:20px;"></div>
@@ -81,8 +81,8 @@
 		<div>
 			<input class="BottonWithLabel" id="ButtonToPrevGeneration" type="button" value=""/>
 			<label class="labelFamily" for="ButtonToPrevGeneration">前の世代を見る</label>
-			<input class="BottonWithLabel" id="ButtonToNextGeneration" type="button" value=""/>
-			<label class="labelFamily" for="ButtonToNextGeneration">次の世代を見る</label>
+<!-- 			<input class="BottonWithLabel" id="ButtonToNextGeneration" type="button" value=""/>
+			<label class="labelFamily" for="ButtonToNextGeneration">次の世代を見る</label> -->
 		</div>
 
 		<div style="height:10px;"></div>
@@ -95,8 +95,8 @@
 		<div>
 			<input class="BottonWithLabel" id="ButtonToPrevGeneration" type="button" value=""/>
 			<label class="labelFamily" for="ButtonToPrevGeneration">前の世代を見る</label>
-			<input class="BottonWithLabel" id="ButtonToNextGeneration" type="button" value=""/>
-			<label class="labelFamily" for="ButtonToNextGeneration">次の世代を見る</label>
+<!-- 			<input class="BottonWithLabel" id="ButtonToNextGeneration" type="button" value=""/>
+			<label class="labelFamily" for="ButtonToNextGeneration">次の世代を見る</label> -->
 		</div>
 
 		<div style="height:40px;"></div>
@@ -131,13 +131,13 @@
 <!-- 	<script src="jquery.js"></script> -->
 	<script type="text/javascript">
 
-		var candModel=[57,58,66,69,71,74,76,82,84,85,90,91,93,94,97,101,103,104,105,107,109,113,117,120,122,125,126,127,128,129,130,131,132,133,134,135,136,137,138,139,140,141,142,143,144,145,146,147,148,149];
-		var listName=['三輪みさと','竹中ともみ','熊田せいいち','角田さちえ','広瀬ふみひこ','横尾みえ','小柳あやか','野中こういち','倉橋あいこ','勝田ゆうき','中山りさ','玉田ねね','河田まさき','矢田こうじ','柿沼のりお','磯野こういち','磯野ひでゆき','嶋田ゆいか','玉田たかし','三橋たまみ','広瀬りょう','柳瀬こうすけ','島しんや','白川しょうこ','秋元しょうこ','広瀬まさなり','角田もとき','長浜ゆうき','藤村あつし','岩下あきこ','須賀かずみ','中山のぶあき','秋元えいすけ','勝田わたる','玉田あきひこ','竹中めぐみ','磯野ひとし','三輪あやの','熊田みずき','河田とみこ','多田さゆり','玉田しゅういち','広瀬みきお','玉田たくや','磯野みや','島たいこ','柿沼かんな','藤村ともみ','秋元まさし','磯野えみこ'];
+		var candModel=[57,58,69,71,74,76,90,91,93,94,97,103,120,126,128,130,131,133,134,136,141,144,145,146,147,150,151,152,153,154,155,156,157,158,159,160,161,162,163,164,165,166,167,168,169,170,171,172,173,174];
+		var listName=['三輪みさと','竹中ともみ','角田さちえ','広瀬ふみひこ','横尾みえ','小柳あやか','中山りさ','玉田ねね','河田まさき','矢田こうじ','柿沼のりお','磯野ひでゆき','白川しょうこ','角田もとき','藤村あつし','須賀かずみ','中山のぶあき','勝田わたる','玉田あきひこ','磯野ひとし','玉田しゅういち','磯野みや','島たいこ','柿沼かんな','藤村ともみ','角田ゆめ','角田あきこ','藤村しょうこ','小柳ひろし','玉田めぐみ','須賀あさみ','玉田たかし','勝田りょうすけ','竹中あつし','広瀬ひかる','広瀬まきえ','野中よしひこ','秋元まさお','広瀬たいすけ','三輪なお','玉田えりな','小柳としあき','玉田はるか','広瀬よしゆき','竹中めぐみ','島けいすけ','河田あや','中山あすか','三橋りえこ','磯野としひこ'];
 
 		var str='';
 		for(let i=0;i<candModel.length;i++){
 			str+='<div style="margin: 20px 0 0 0;">';
-			str+='<img src="https://creevo-music.com/experiment/S1G4_La72fG/ExpS1_'+String(candModel[i])+'.png" height="120" alt="Picture" style="background-color:#eeeeee; margin: 5px 10px;"/>';
+			str+='<img src="https://creevo-music.com/experiment/S1G5_B2d7S7/ExpS1_'+String(candModel[i])+'.png" height="120" alt="Picture" style="background-color:#eeeeee; margin: 5px 10px;"/>';
 			str+='<div>'+listName[i]+'</div>';
 			str+='</div>';
 		}//endfor i
@@ -148,12 +148,12 @@
 		});
 
 		document.getElementById('ButtonToPrevGeneration').addEventListener('click', function(event){
-			location.href = 'https://creevomusic.github.io/exp/Creator/CreatorsExpS1G3.html';
+			location.href = 'https://creevomusic.github.io/exp/Creator/CreatorsExpS1G4.html';
 		});
 
-		document.getElementById('ButtonToNextGeneration').addEventListener('click', function(event){
-			location.href = 'https://creevomusic.github.io/exp/Creator/CreatorsExpS1G5.html';
-		});
+//		document.getElementById('ButtonToNextGeneration').addEventListener('click', function(event){
+//			location.href = 'https://creevomusic.github.io/exp/Creator/CreatorsExpS1G5.html';
+//		});
 
 	</script>
 
