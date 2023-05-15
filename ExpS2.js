@@ -173,7 +173,7 @@ function SetupTest(){
 	ClearRating();
 
 	workCounter+=1;
-	document.getElementById("ShowWorkCounter").innerHTML=String(workCounter)+' 回目の聴き比べです';
+	document.getElementById("ShowWorkCounter").innerHTML=String(workCounter)+' 回目の聴き比べです（あと '+String(Math.max(0,21-workCounter))+' 回お願いします）';
 
 }//end SetupTest
 
